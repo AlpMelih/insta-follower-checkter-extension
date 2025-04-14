@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Takipçi Analiz</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f9f9f9;
+            width: 300px;
+        }
+
+        h3 {
+            color: #333;
+            text-align: center;
+        }
+
+        button {
+            background: #ff0066;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #e6005a;
+        }
+
+        #status {
+            text-align: center;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .user-list {
+            max-height: 200px;
+            overflow-y: auto;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .user-list li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        #instructions {
+            background: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Takipçi Analiz</h3>
+    <div id="instructions">
+        <h4>Uygulama Kullanım Rehberi</h4>
+        <p>Eklenti her kapandığında sağ ustteki eklentiler kısmından yeniden açın.</p>
+        <p>1. Instagram sayfanızda takip ettiklerinizi açın ve tümünün yüklenmesi için aşağı kaydırdın.</p>
+        <p>2. "Analizi Başlat" butonuna tıklayın. Böylece Takip ettikleriniz kaydedilecek.</p>
+        <p>3. Daha sonra takipçilerinize girin ve tümünün yüklenmesi için aşağı kaydırın.</p>
+        <p>4.Tekrar analiz et butonuna tıklayın. Eğer seni takip etmeyen kişiler varsa, liste halinde
+            gösterilecektir.</p>
+        <p>5. Analizi tekrar yapmak için sayfayı yenileyin ve "Analizi Başlat" butonuna tekrar tıklayın.</p>
+    </div>
+    <button id="check">Analizi Başlat</button>
+    <p id="status">Durum: Beklemede</p>
+    <ul id="result" class="user-list"></ul>
+    <script src="popup.js"></script>
+</body>
+
+</html>
